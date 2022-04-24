@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translater</title>
+    <style>
+        #master{
+            margin:auto;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border:1px solid black;
+            height:200px;
+            width:80%
+        }
+        .input{
+            flex:1;
+            border:1px solid black;
+            height:200px
+        }
+        .output{
+            flex:1;
+            border:1px solid red;
+            height:200px;
+          
+            align-items: center;
+        }
+        input{
+            width:80%;
+            height:195px
+            
+        }
+        #translate{
+            padding:20px
+        }
+        #gap{
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+<body>
+    <center><h2>Translater</h2></center>
+
+  <div id="gap">  <select name="language" id="inlanguage">
+        <option value="en">English</option>
+        <option value="hi">Hindi</option>
+        <option value="es">Spanish</option>
+    </select>
+    <h2>Select language</h2>
+    <select name="language" id="otlanguage">
+        <option value="hi">Hindi</option>
+        <option value="en">English</option>
+        <option value="es">Spanish</option>
+    </select>
+</div>
+    <div id="master">
+        <div class="input"><input type="textbox" id="words"><button id="translate">Translate</button></div>
+        <div class="output"></div>
+    </div>
+
+</body>
+</html>
+<script src="index.js"></script>
